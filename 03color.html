@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>색상관련태그</title>
+</head>
+<body>
+    <h1>색상관련태그</h1>
+    <h2>html4에서의 색 표현</h2>
+        <p>html에서의 색 표현 방법</p>
+        <p><b><i>1. 색상명 2. RGB색상값 3. 16진수색상값</i></b></p>
+        <p>W3C에서 정한 표준색상은 총 126개</p>
+        <p>단 주요 브라우저는 140여개의 색상을 지원함</p>
+        <p>자세한 색상이름은 htmlcolorcodes.com을 참조!!!</p>
+        <p>html의 색상관련 속성으로 색을 지정하는 것보다는 CSS를 통해 색상을 지정하는 것을 권장!</p>
+
+        <div style="background-color: red; color: white">빨</div>
+        <div style="background-color: orange; color: white">주</div>
+        <div style="background-color: yellow; color: orange">노</div>
+        <div style="background-color: green; color: white">초</div>
+        <div style="background-color: blue; color: white">파</div>
+        <div style="background-color: navy; color: white">남</div>
+        <div style="background-color: purple; color: white">보</div>
+    <hr>
+        <p>16진수색상값은 RGB색상을 16진수로 각각 변환</p>
+        <p>00 ~ FF</p>
+        <p>표기방법은 &sharp; 다음에 3개의 16진수값을 정의</p>
+
+        <div style="background-color: #FF0000 ; color: #FFFFFFFF">빨</div>
+        <div style="background-color: #FFA500FF; color: #FFFFFFFF">주</div>
+        <div style="background-color: #FFFF00; color: #FFA500FF">노</div>
+        <div style="background-color: #00FF00; color: #FFFFFFFF">초</div>
+        <div style="background-color: #0000FF; color: #FFFFFFFF">파</div>
+        <div style="background-color: #000080FF; color: #FFFFFFFF">남</div>
+        <div style="background-color: #800080FF; color: #FFFFFFFF">보</div>
+    <hr>
+        <p>RGB색상값은 RGB색상을 10진수로 각각 변환</p>
+        <p>00 ~ 255</p>
+        <p>표기방법은 rgb() 안에 3개의 10진수값을 정의</p>
+        <p>RGB색상에 투명도를 적용하려면 rgba()를 사용</p>
+
+        <div style="background-color: rgb(255,0,0) ; color: rgb(255,255,255)">빨</div>
+        <div style="background-color: rgb(255,165,0); color: rgb(255,255,255)">주</div>
+        <div style="background-color: rgb(255,255,0); color: rgb(255,165,0)">노</div>
+        <div style="background-color: rgb(0,255,0); color: rgb(255,255,255)">초</div>
+        <div style="background-color: rgb(0,0,255); color: rgb(255,255,255)">파</div>
+        <div style="background-color: rgb(0,0,128); color: rgb(255,255,255)">남</div>
+        <div style="background-color: rgb(128,0,128); color: rgb(255,255,255)">보</div>
+    <hr>
+        <div style="background-color: rgba(255,0,0,0); color: red">빨강</div>
+        <div style="background-color: rgba(255,0,0,0.2); color: white">빨강</div>
+        <div style="background-color: rgba(255,0,0,0.4); color: white">빨강</div>
+        <div style="background-color: rgba(255,0,0,0.6); color: white">빨강</div>
+        <div style="background-color: rgba(255,0,0,0.8); color: white">빨강</div>
+        <div style="background-color: rgba(255,0,0,1); color: white">빨강</div>
+    <hr>
+
+    <h2>html5에서의 색 표현(심화)</h2>
+        <p>html5에서는 색상/채도/명도 등으로 색상을 표현하는 hsl/hsla 색상코드가 도입됨</p>
+    <hr>
+        <p>16진수색상 vs RGB색상 vs hsl색상</p>
+    <hr>
+        <p>그 외 hwb, cmyk 색상코드로도 색을 표현할 수 있다</p>
+        <p>단, html5에서는 미지원, CSS4에서는 지원예정</p>
+
+</body>
+</html>
