@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>목록관련태그</title>
+</head>
+<body>
+    <h1>목록관련태그</h1>
+    <h2>개요</h2>
+        <p>깔끔한 정보전달을 위해 여러 요소들을 일렬로 나열한 명단이나 목록을 의미</p>
+        <p>html에서는 목록을 표현하기 위해 순서 없는 목록, 순서 있는 목록, 정의목록 등을 지원</p>
+    <hr>
+    <h2>순서 없는<sup>unordered</sup> 목록</h2>
+        <p>명단의 요소를 기호로 나타내는 목록의 형태</p>
+        <p>ul, li태그 등을 이용해서 표현</p>
+        <p>목록에 사용가능한 기호는 circle, square, disc등이 있음</p>
+
+        <h3>내가 좋아하는 점심메뉴</h3>
+            <ul style="list-style-type: circle">
+              <li>돈까스</li>
+              <li>쌀국수</li>
+              <li>햄버거</li>
+              <li>돼지국밥</li>
+              <li>제육덮밥</li>
+            </ul>
+
+        <h3>내가 좋아하는 점심메뉴</h3>
+            <ul style="list-style-type: disc">
+              <li>돈까스</li>
+              <li>쌀국수</li>
+              <li>햄버거</li>
+              <li>돼지국밥</li>
+              <li>제육덮밥</li>
+            </ul>
+
+        <h3>내가 좋아하는 점심메뉴</h3>
+            <ul style="list-style-type: square">
+              <li>돈까스</li>
+              <li>쌀국수</li>
+              <li>햄버거</li>
+              <li>돼지국밥</li>
+              <li>제육덮밥</li>
+            </ul>
+    <hr>
+    <h2>순서 있는<sup>ordered</sup> 목록</h2>
+        <p>명단의 요소를 순서가 있는 기호로 나타내는 목록의 형태</p>
+        <p>ol, li태그 등을 이용해서 표현</p>
+        <p>목록에 사용가능한 기호는 decimal, alpha, roman등이 있음</p>
+
+        <h3>내가 좋아하는 점심메뉴</h3>
+            <ol style="list-style-type:decimal">
+              <li>돈까스</li>
+              <li>쌀국수</li>
+              <li>햄버거</li>
+              <li>돼지국밥</li>
+              <li>제육덮밥</li>
+            </ol>
+
+        <h3>내가 좋아하는 점심메뉴</h3>
+            <ol style="list-style-type:lower-alpha">
+              <li>돈까스</li>
+              <li>쌀국수</li>
+              <li>햄버거</li>
+              <li>돼지국밥</li>
+              <li>제육덮밥</li>
+            </ol>
+
+        <h3>내가 좋아하는 점심메뉴</h3>
+            <ol style="list-style-type:upper-roman">
+              <li>돈까스</li>
+              <li>쌀국수</li>
+              <li>햄버거</li>
+              <li>돼지국밥</li>
+              <li>제육덮밥</li>
+            </ol>
+    <hr>
+    <h2>정의<sup>definition</sup>목록</h2>
+        <p>용어와 그 용어에 대한 해설을 모아놓은 목록</p>
+        <p>dl태그로 목록의 시작, dt태그로 용어의 이름, dd태그로 해당 용어에 대한 설명을 작성</p>
+
+    <h3>웹표준 용어</h3>
+    <dl>
+        <dt>HTML</dt>
+            <dd>웹사이트를 구성하는 웹문서 작성에 사용하는 마크업 언어</dd>
+        <dt>CSS</dt>
+            <dd>html로 작성된 문서를 시각적으로 꾸밀 때 사용</dd>
+        <dt>Javascript</dt>
+            <dd>html에서 사용하는 객체기반 스크립트 프로그래밍 언어</dd>
+    </dl>
+    <hr>
+
+    <h2>중첩<sup>nasted</sup>목록</h2>
+        <p>목록을 구성하는 요소들을 구조화<sup>structured</sup>된 정보형태로 나타낼 때 주로 사용</p>
+
+    <h3>내가 좋아하는 점심메뉴</h3>
+        <ul>
+            <li>한식
+              <ul>
+                <li>비빔밥</li>
+                <li>된장찌개</li>
+                <li>육개장</li>
+              </ul>
+            </li>
+            <li>분식
+              <ul>
+                <li>라면</li>
+                <li>떡볶이</li>
+                <li>김밥</li>
+              </ul>
+            </li>
+            <li>중식
+              <ul>
+                <li>짜장면</li>
+                <li>탕수육</li>
+                <li>짬뽕</li>
+              </ul>
+            </li>
+        </ul>
+
+    <h3>내가 좋아하는 점심메뉴</h3>
+    <ol>
+      <li>한식
+        <ol style="list-style: lower-alpha">
+          <li>비빔밥</li>
+          <li>된장찌개</li>
+          <li>육개장</li>
+        </ol>
+      </li>
+      <li>분식
+        <ol style="list-style: lower-alpha">
+          <li>라면</li>
+          <li>떡볶이</li>
+          <li>김밥</li>
+        </ol>
+      </li>
+      <li>중식
+        <ol style="list-style: lower-alpha">
+          <li>짜장면</li>
+          <li>탕수육</li>
+          <li>짬뽕</li>
+        </ol>
+      </li>
+    </ol>
+    <hr>
+
+    <h2>네비게이션 구조 작성시 목록 사용</h2>
+        <p>웹페이지의 gnb, lnb, fnb 등을 만들 때 사용</p>
+
+    <h2>네이버 뉴스 gnb</h2>
+    <nav>
+        <ul>
+          <li><a href="https://news.naver.com/?viewType=pc">언론사별</a></li>
+          <li><a href="https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=100">정치</a></li>
+          <li><a href="https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=101">경제</a></li>
+          <li><a href="https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=102">사회</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
