@@ -3,44 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>view</title>
+    <style>
+        th {width: 100px;}
+
+    </style>
 </head>
 <body>
 <header>
-    <h2>JSP 프로젝트 v1</h2>
+    <h1>JSP 프로젝트 v1</h1>
 </header>
 <nav>
     <ul>
-        <li>Home</li>
-        <li>회원가입</li>
-        <li>로그인</li>
-        <li>게시판</li>
-        <li>회원정보</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="join.html">회원가입</a></li>
+        <li><a href="login.html">로그인</a></li>
+        <li><a href="list.html">게시판</a></li>
+        <li><a href="myinfo.html">회원정보</a></li>
     </ul>
 </nav>
 <hr>
 <main>
-    <h3>회원정보</h3><br><br><br><br><br>
-    <table>
-        <tr>
-            <td>제목</td>
-            <td>시간은 금이라구, 친구! 진짜라구, 친구! 정말이라구, 친구! 참말이라구, 친구!</td>
-        </tr>
-        <tr>
-            <td>이름</td>
-            <td>으하하하</td>
-        </tr>
-        <tr>
-            <td>이메일</td>
-            <td>zzyzigy@naver.com</td>
-        </tr>
-        <tr>
-            <td>가입일</td>
-            <td>2014-05-01 12:01:33</td>
-        </tr>
-    </table>
-
-
-    <br><br><br><br><br>
+    <h2>게시판 본문글</h2>
+        <table>
+           <tr>
+               <th>제   목</th>
+               <td>시간은 금이라구, 친구! 진짜라구, 친구! 정말이라구, 친구! 참말이라구, 친구!</td>
+           </tr>
+           <tr>
+               <th>작성자</th>
+               <td>siestageek</td>
+           </tr>
+           <tr>
+               <th>작성일</th>
+               <td>2014-05-05 12:45:05 (777)</td>
+           </tr>
+           <tr>
+               <th>본   문</th>
+               <td style="height: 300px; width: 450px">시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!!
+                   시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!!
+                   시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!!
+                   시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!!
+                   시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!!
+                   시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!!
+                   시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!!
+                   시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!! 시간은 금이라구, 친구!! </td>
+           </tr>
+           <tr>
+               <td colspan="2">
+                   <button type="button"
+                    onclick="location.href='write.html'">새글쓰기</button>
+                   <button type="button">목록으로</button>
+                   <button type="button">수정하기</button>
+                   <button type="button">삭제하기</button>
+               </td>
+           </tr>
+        </table>
 </main>
 <hr>
 <footer>
